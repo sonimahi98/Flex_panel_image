@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+.panels{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: yellow;
+
+}
+
+.panel{
+    font-family:cursive;
+    color:rgb(244, 237, 237);
+    /* text-align: center; */
+    font-size: 15px;
+    font-weight: 200;
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-size:cover;
+    background-position: center;
+    transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11), background 0.2s;
+    box-shadow: 
+        inset 1px 0px 2px 1px rgb(43, 31, 31),
+        inset 1px 0px 2px 1px rgb(14, 9, 9);
+}
+
+.panel-1{background-image:url("tiger.png");}
+.panel-2{background-image:url("tortoise.webp");}
+.panel-3{ background-image:url("David-Duchemin-03.webp");}
+.panel-4{background-image:url("bird.jpg");}
+.panel-5{background-image:url("34839215445_34e2c6d89c_b.jpg");}
+
+/* flex children */
+
+.panel > *{
+    margin: 0;
+    /* width: 100%; */
+    flex: 0 0 auto;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(100%); }
+.panel.open-active > *:last-child { transform: translateY(0); }
+
+.panel.open{
+    flex:5;
+}
+.panel p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+  }
