@@ -32,11 +32,11 @@
         inset 1px 0px 2px 1px rgb(14, 9, 9);
 }
 
-.panel-1{background-image:url("tiger.png");}
-.panel-2{background-image:url("tortoise.webp");}
-.panel-3{ background-image:url("David-Duchemin-03.webp");}
-.panel-4{background-image:url("bird.jpg");}
-.panel-5{background-image:url("34839215445_34e2c6d89c_b.jpg");}
+.panel-1{background-image:url("Images/tiger.png");}
+.panel-2{background-image:url("Images/tortoise.webp");}
+.panel-3{ background-image:url("Images/David-Duchemin-03.webp");}
+.panel-4{background-image:url("Images/bird.jpg");}
+.panel-5{background-image:url("Images/34839215445_34e2c6d89c_b.jpg");}
 
 /* flex children */
 
