@@ -1,7 +1,7 @@
 const panels = document.querySelectorAll('.panel');
 
     function toggleOpen() {
-      // console.log('Hello');
+      console.log(this);
       this.classList.toggle('open');
     }
 
@@ -9,6 +9,8 @@ const panels = document.querySelectorAll('.panel');
       console.log(e.propertyName);
       if (e.propertyName.includes('flex')) {
         this.classList.toggle('open-active');
+        const secondP = this.querySelectorAll('p')[1];
+        secondP.classList.toggle("hidden");
       }
     }
 
